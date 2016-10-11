@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> www.blueskys/SignUp.com </title>
+	<meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="../css/SignUp.css" type="text/css"/>
+	
+	<script type="text/javascript" src="../js/SignUp.js"></script>
+	 <script type="text/javascript" src="../js/jquery.js"></script>
+	<meta name="viewport" content="width=device-width" />
+	<script type ="text/javascript">
+				function callBack(){
+	
+				var name = document.getElementsByName("fname");
+				var secName = document.getElementsByName("sname");
+				var email = document.getElementsByName("email");
+				var remail = document.getElementsByName("remail");
+				var password = document.getElementsByName("password");
+				var rpassword = document.getElementsByName("rpassword");
+					alert(" your First name is "+name[0].value+" \n your Surname is "+secName[0].value+" \n\n your email name is "+email[0].value+" \n your email name is "+remail[0].value+" \n\n your password is "+password[0].value+" \n your password  is "+rpassword[0].value);
+	
+					}
+				</script>
+				<script type ="text/javascript">
+				function back(){
+	
+			
+				var e = document.getElementsByName("email");
+				var p= document.getElementsByName("password");
+				var rp = document.getElementsByName("rpassword");
+					alert("  your email name is "+email[0].value+" \n your password is "+password[0].value+" \n your password  is "+rpassword[0].value);
+	
+					}
+				</script>
+				
+				<script type="text/javascript">
+				function validateForm() {
+			var x = document.forms["CreateAccount"]["email"].value;
+			var atpos = x.indexOf("@");
+			var dotpos = x.lastIndexOf(".");
+		
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+				alert("Not a valid e-mail address");
+				return false;
+				
+			}
+		}	
+				</script>
+	
+</head>
+
+<body class="body">
+
+	<header class="mainHeader"/>
+	
+	
+		 <div class="image">
+		<img src="../images/logo.png"/>
+		</div>
+		<nav><ul><!--navigation bar-->
+				<li class="active"><a href="../index.html">Home</a></li>
+				<li><a href="CityBreaks.html">City Breaks</a></li>
+				<li><a href="Sights.html">Sight Seeing</a></li>
+				<li><a href="Adventure.html">Adventure</a></li>
+				<li><a href="Weekend.html">Weekend Getaways</a></li>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+				<li><a href="SignUp.html"> <b> Sign in </b> or <b> create an account </b></a> </li>
+			</nav></ul>
+	</br>
+	</header>
+	<center><div class="mainContent">
+		<div class="FormOne">
+			<article class="topContent">
+				<header class="CreateAccount">
+					<h2> <a href="#" title="JOIN!" class="account"> Create an Account! </a> </h2>
+						</header>
+							<content>
+								<form name="CreateAccount">
+									First Name<br><input type = "name" name="fname" placeholder=" enter your first name" id="FirstName"><br>
+									Surname<br><input type= "sname" name="sname" placeholder=" enter your surname" id="Surname"><br>
+									Email<br><input type="email" name="email" placeholder=" enter your email address"id="Email"><br>
+									Repeat email address<br><input type="email" name="remail" placeholder=" repeat your email address"id="Email"><br>
+									Enter password</br><input type  = "password"  name = "password" placeholder=" enter your password"id="Password"><br>
+									Repeat password</br><input type  = "password"  name = "rpassword" placeholder=" repeat your password"id="Password"><br>
+								<br>
+							<input type = "submit" value = "Create account" class="submit" onClick="callBack();validateForm();"/>
+						<input type = "reset" value = "Reset Form" class="submit"/>
+					</form>
+				</content>
+			</article>
+		</div>
+	</div>
+</center>
+			
+					<center><div class="mainContent">
+						<div class="FormTwo">
+							<article class="topContent">
+				<header class="CreateAccount">
+					<h2> <a href="#" title="JOIN!" class="account" > Sign In! </a> </h2>
+				</header>
+							<content>
+								<form name="signIn">
+									
+									Email<br><input type="email" name="email" placeholder=" enter your email address"id="Email"><br>
+									Enter password</br><input type  = "password"  name = "password" placeholder=" enter your password"id="Password"><br>
+									Repeat password</br><input type  = "password"  name = "rpassword" placeholder=" repeat your password"id="Password"><br>
+								<br>
+							<input type = "submit" value = "Create account" class="submit" onClick="back();"/>
+						<input type = "reset" value = "Reset Form" class="submit"/>
+					</form>
+				</content>
+			</article>
+			
+		</div>
+		
+	</div>
+	</center>
+	
+	
+		<footer class="mainFooter">
+			<p>Copyright &copy; <a href="#" title="blueskys.com"> blueSkys.com</a></p>
+	</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title> Adventure </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="../css/Adventure.css" type="text/css"/><!--css-->
+		<script src="js/DateAndTime.js"></script><!--date&time link-->
+		<script type="text/javascript" src="../js/jquery.js"></script><!--jquery-->
+		<script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script><!--jquery slider-->
+		<script type="text/javascript" src="../js/jcarousel.responsive.js"></script><!--jquery slider-->
+		<script type="text/javascript" src="../js/form.js"></script><!--js validation-->
+		<script src="../js/DateAndTime.js"></script><!--date&time-->
+	
+	
+	</head>
+
+	<body class="body">
+
+		<header class="mainHeader"/>
+			 <div class="image">
+			<img src="../images/logo.png"/>
+			</div>
+			<nav><ul><!--navigation bar-->
+				<li class="active"><a href="../index.html">Home</a></li>
+				<li><a href="CityBreaks.html">City Breaks</a></li>
+				<li><a href="Sights.html">Sight Seeing</a></li>
+				<li><a href="Adventure.html">Adventure</a></li>
+				<li><a href="Weekend.html">Weekend Getaways</a></li>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+				<li><a href="SignUp.html"> <b> Sign in </b> or <b> create an account </b></a> </li>
+			</nav></ul>
+		
+		</header>
+		<div class="mainContent">
+			<div class="content">
+				<article class="topContent">
+					<header>
+						<h2> <title="first post"> Adventure </h2>
+					</header>
+						<footer>
+							<p class="postInfo">Here you will find resorts located in the most beautiful places world wide!</p>
+						</footer>
+					<content><!--slider-->
+						<div class="wrapper">
+								
+									<div class="jcarousel-wrapper">
+									<h5>Desert Gardens</h5>
+									<p>A superior hotel at Ayers Rock
+									Resort, Desert Gardens Hotel is
+									amongst magnificent scenery.</p>
+									<p>Each of the 218 rooms of the
+									Desert Gardens feature the
+									unique flora of the Central
+									Australian Desert.</p>
+									<p>price:€400 per Night</p>
+										<div class="jcarousel">
+											<ul><!--pics of hotel -->
+												<li><img src="../images/DesertGardens.jpg" alt="Image 1"></li>
+												<li><img src="../images/DesertGardensTwo.jpg" alt="Image 2"></li>
+												<li><img src="../images/DesetGardensThree.jpg" alt="Image 3"></li>
+												<li><img src="../images/DesertGardensFour.jpg" alt="Image 5"></li>
+												<li><img src="../images/BeverlyHIlls.jpg" alt="Image 5"></li>
+											</ul>
+										</div>
+									<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+									<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+						<p class="jcarousel-pagination"></p>
+					</div>
+				</div>
+				<div class="wrapper">
+						
+								
+									<div class="jcarousel-wrapper"><!--slider-->
+									<h5>The El Tovar Hotel</h5>
+									<p>The El Tovar Hotel, also known simply as El Tovar,
+										is a former Harvey House hotel situated directly on the south
+										rim of the Grand Canyon in Arizona, USA.</p>
+										<p>It is at the northern terminus of the Grand Canyon Railway,
+											which was formerly a branch of the Santa Fe.
+										</p>
+										<p>price:€350 per Night</p>
+										<div class="jcarousel">
+										
+											<ul><!--pics of hotel-->
+												<li><img src="../images/room.jpg" alt="Image 1"></li>
+												<li><img src="../images/DesetGardensThree.jpg" alt="Image 3"></li>
+												<li><img src="../images/one.jpg" alt="Image 2"></li>
+												<li><img src="../images/ElTovar.jpg" alt="Image 3"></li>
+												<li><img src="../images/OutbackPioneer.jpg" alt="Image 3"></li>
+											</ul>
+										</div>
+									<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+									<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+						<p class="jcarousel-pagination"></p>
+					</div>
+				</div>
+				<div class="wrapper">
+						
+								
+									<div class="jcarousel-wrapper"><!--slider-->
+									<h5>The Yavapai Lodge</h5>
+									<p>The Yavapai Lodge is located directly on the 
+										north rim of the Grand Canyon in Arizona, USA.</p><p>
+										The North Rim is a smaller, more remote area with less
+										tourist activity. It is accessed by Arizona State Route 67.</p>
+										<p>price:€250 per Night</p>
+										<div class="jcarousel">
+											<ul><!--pics of hotel-->
+												<li><img src="../images/YavapaiLodge.jpg" alt="Image 1"></li>
+												<li><img src="../images/YavapaiLodgeOne.jpg" alt="Image 2"></li>
+												<li><img src="../images/YavapaiLodgeTwo.jpg" alt="Image 3"></li>
+												<li><img src="../images/DesetGardensThree.jpg" alt="Image 3"></li>
+												<li><img src="../images/TheSheraton.jpg" alt="Image 3"></li>
+											</ul>
+										</div>
+									<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+									<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+						<p class="jcarousel-pagination"></p>
+					</div>
+				</div>
+			</content>
+		</article>
+	</div>
+	</div>
+		<aside class="topBar">
+				<article>
+					<h2>Date and Time</h2>
+					<span id="clockbox"> </span>
+						<script type="text/javascript">
+				GetClock();<!--calling the function for date and time-->
+			</script>
+				</article>
+					</aside>
+					<aside class="middleBar">
+							<article>
+								<h2>Subscribe to our weekly newsletter!</h2>
+									<form name="newsletter" onsubmit="" method="post">
+								<div>Subscribe Here!</br> </br> <input name = "email" class="input" placeholder=" enter your email address"id="Email" name="email">
+							</div></br>
+					Confirm<input type="checkbox" name="box" id="cbox" value="subscribe" onclick="" class="submit" />
+				<input type = "submit" value = "Click to Subscribe" class="newsletter" name="box"  onClick="validator(); validateForm();"/>
+					</form>
+						</article>
+							</aside>
+								<aside class="bottomBar">
+									<article>
+										<center><h2>Our Social Media Links</h2></center>
+											<center><p><a href="https://www.facebook.com/pages/Blue-Skys/587319044734208?sk=info&tab=page_info"><img src="../images/facebook.jpg" id="fb" alt="Facebook"/></a></p>
+									<p><a href="https://twitter.com/Blue_SkysInc"><img src="../images/twitter.jpg" id="twitter" alt="Facebook"/></a></p></center>
+								</article>
+						</aside>
+						</aside>
+		<footer class="mainFooter">
+	<p>Copyright &copy; <a href="#" title="blueskys.com"> blueSkys.com</a></p>
+
+</body>
+
+
+	</html>

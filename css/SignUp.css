@@ -1,0 +1,278 @@
+body{
+	background-image: url('bg.jpg');
+	color: #000305;
+	font-size: 87.5%; /*base font=14px*/
+	font-family:Arial, 'lucida Sans Unicode';
+	line-height:100%;
+	text-align:left;
+}
+h2{
+color:#666; /*fix colours*/
+}
+
+.image{
+padding:0% 10%;
+
+}
+
+a{
+	text-decoration:none;
+}
+
+a:link, a:visited{
+	color:#0099FF;
+	}
+a:hover, a:active{
+	color:#0099FF;
+	
+}
+
+.body{
+	margin:0 auto;
+	width:90%;
+	height:100%;
+	clear:both;
+}
+
+.mainHeader img{
+	width:20%;
+	height:auto;
+	margin:2% 0;
+}
+
+.mainHeader nav{
+	background-color:#666;
+	height:40px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	overflow:none;
+
+}
+
+.mainHeader nav ul{
+	list-style:none;
+	margin:0 auto;
+}
+
+.mainHeader nav ul li{
+	float:left;
+	display:inline;
+	padding:0 2.5%;
+}
+
+.mainHeader nav a:link {
+	color:#FFF;	
+	display:block;
+	padding:10px 10px;
+	height:20px;
+}
+.mainHeader nav a:visited{
+	color:#FFF;	
+	display:block;
+	padding:10px 10px;
+	height:20px;
+}
+
+.mainHeader nav a:hover,  .mainHeader nav a:active, .mainHeader nav .active a:visited{
+	background-color: #0099FF;
+	text-shadow:none;
+	}
+
+.mainHeader nav ul li a{
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+
+}
+
+.mainContent{
+	line-height:25px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
+}
+
+.FormOne{
+	width:30%;
+	float:left;
+	padding-left:12%;
+}
+
+.FormTwo{
+	width:30%;
+	float:left;
+	padding-left:8%;
+	height:20%;
+	
+}
+
+.topContent{
+	background-color:#FFF;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding:3% 5%;
+	margin-top:0.5%;
+	padding-right:5%;
+
+}
+
+
+
+#FirstName{
+padding:0% 5% 0.3% 0%;
+border-radius:1%;
+
+}
+
+#Surname{
+padding:0% 5% 0.3% 0%;
+border-radius:1%;
+
+}
+
+#Email{
+padding:0% 5% 0.3% 0%;
+border-radius:1%;
+
+}
+
+#RepeatEmail{
+padding:0% 5% 0.3% 0%;
+border-radius:1%;
+
+}
+
+#Password{
+padding:0% 5% 0.3% 0%;
+border-radius:1%;
+}
+
+#ConfirmPassword{
+padding:0% 5% 0.3% 0%;
+border-radius:1%;
+}
+ span{
+font-size:12px;
+font-style:italic;
+color:red;
+visibility:hidden;
+}
+.submit:hover{
+	background-color: #0099FF;
+	text-shadow:none;
+	border-radius:5px;
+	color:#FFF;
+}
+.account:hover{
+	background-color: #0099FF;
+	text-shadow:none;
+	border-radius:3px;
+	color:#FFF;
+	font-size:120%;
+}
+
+.mainFooter{
+	width:100%;
+	height:40px;
+	float:left;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background-color:#666;
+	margin:2% 0;
+	
+}
+
+.mainFooter p {
+	width:92%;
+	margin:10px auto;
+	color:#FFF;
+}
+		/*this is for phone/tablet display*/
+@media only screen and (min-width:150px) and (max-width:600px)
+{
+
+	.body{
+		width:90%;
+		font-size:95%;
+		}
+		
+	.mainHeader img{
+		width:100%;
+		}
+
+	.mainHeader nav{
+	height:280px;
+		}
+
+	.mainHeader nav ul{
+		padding-left:1%;
+		}
+
+	.mainHeader nav ul li{
+		width:100%;
+		margin:0 auto;
+		text-align:center;
+		}
+
+	.mainHeader nav a:link {
+		padding:10px 10px;
+		height:20px;
+		display:inline-block;
+		}
+		
+	.mainHeader nav a:visited{
+		color:#FFF;	
+		display:inline-block;
+		padding:10px 10px;
+		height:20px;
+		display:block;
+		}
+		
+	.mainHeader nav ul li a{
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+		}
+		
+
+	.FormOne{
+		width:100%;
+		float:left;
+		padding:10px 10px;
+		
+		}
+	
+	.FormTwo{
+		width:100%;
+		float:left;
+		padding:10px 10px;
+		margin-top:2%;
+		}
+		
+		.topContent{
+			background-color:#FFF;
+			border-radius:5px;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			padding:3% 5%;
+			margin-top:2%;
+			margin-bottom:4%
+		}
+		
+		
+		
+
+
+	}
+
+
+
+
+
+
+
+
